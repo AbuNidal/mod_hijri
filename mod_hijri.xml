@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.5" client="site" method="upgrade">
+	<name>mod_hijri</name>
+	<author>jarabic.com</author>
+	<creationDate>October 2016</creationDate>
+	<copyright>(C) 2016 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@jarabic.com</authorEmail>
+	<authorUrl>https://www.jarabic.com</authorUrl>
+	<version>1.0.1</version>
+	<description><![CDATA[MOD_HIJRI_DES]]></description>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_hijri.ini</language>
+		<language tag="en-GB">language/en-GB.mod_hijri.sys.ini</language>
+		<language tag="ar-AA">language/ar-AA.mod_hijri.ini</language>
+		<language tag="ar-AA">language/ar-AA.mod_hijri.sys.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_hijri">mod_hijri.php</filename>
+        <folder>hijri</folder>
+		<folder>tmpl</folder>
+	</files>
+	<config>
+	<fields name="params">
+	<fieldset name="Basic" label="MOD_HIJRI_MODULE_OPTION">
+		<field name="bahasa" type="list" default="malay" label="MOD_HIJRI_LANGUAGE" description="MOD_HIJRI_LANGUAGE_TO_BE_DISPLAYED_ON_MODULE">
+  			<option value="malay">MOD_HIJRI_MALAY</option>
+			<option value="english">MOD_HIJRI_ENGLISH</option>
+            <option value="arabic">MOD_HIJRI_ARABIC</option>
+			<option value="french">MOD_HIJRI_FRENCH</option>
+			<option value="turkish">MOD_HIJRI_TURKISH</option>
+			<option value="deutsch">MOD_HIJRI_DEUTSCH</option>
+        </field>
+		<field name="arah" type="list" default="rtl" label="MOD_HIJRI_TEXT_DIRECTION" description="MOD_HIJRI_THE_DIRECTION_OF_TEXT_TO_BE_DISPLAY_ON_YOUR_HOMEPAGE">
+  			<option value="ltr">MOD_HIJRI_LEFT_TO_RIGHT</option>
+			<option value="rtl">MOD_HIJRI_RIGHT_TO_LEFT</option>
+        </field>
+		<field name="@spacer" type="spacer" default="" label="" description="" />
+		<field name="masihi" type="radio" default="1" label="MOD_HIJRI_DISPLAY_GREGORIAN_DATE" description="MOD_HIJRI_DISPLAY_GREGORIAN_DATE_DES">
+			<option value="1">MOD_HIJRI_YES</option>
+			<option value="2">MOD_HIJRI_NO</option>
+		</field>
+  		<field name="hari" type="radio" default="1" label="MOD_HIJRI_DISPLAY_DAY_NAME" description="MOD_HIJRI_DISPLAY_DAY_NAME_OF_THE_WEEK">
+			<option value="1">MOD_HIJRI_YES</option>
+			<option value="2">MOD_HIJRI_NO</option>
+		</field>
+		<field name="adjust" type="list" default="0" label="MOD_HIJRI_HIJRI_DATE_ADJUSTMENT" description="MOD_HIJRI_ADJUSTING_HIJRI_DATE_BASED_ON_MOON_SIGHTING">
+			<option value="2">MOD_HIJRI_+2</option>
+			<option value="1">MOD_HIJRI_+1</option>
+			<option value="0">MOD_HIJRI_NO</option>
+			<option value="-1">MOD_HIJRI_-1</option>
+			<option value="-2">MOD_HIJRI_-2</option>
+		</field>
+  		<field name="format" type="list" default="1" label="MOD_HIJRI_DISPLAY_FORMAT" description="MOD_HIJRI_YOU_CAN_SELECT_EITHER_TO_USE_DEFAULT_SITE_FORMAT_OR_MANUAL_FORMAT_BY_EDITING_CSS_FILE_INCLUDED_WITH_THIS_MODULE">
+			<option value="1">MOD_HIJRI_DEFAULT_SITE_FORMAT</option>
+			<option value="2">MOD_HIJRI_MANUAL_FORMAT</option>
+		</field>
+		<field name="manual" type="textarea" cols="30" rows="6"  default="
+		text-align: center;
+		font-size: 10px;
+		font-weight: bold;
+		color:#000000;
+		background: #ffffff;" label="MOD_HIJRI_MANUAL_FORMAT_CODES" description="MOD_HIJRI_PLEASE_ENTER_YOUR_CSS_CODE_HERE_IF_YOU_ARE_CHOOSING_MANUAL_FORMAT" />		
+  		<field name="@spacer" type="spacer" default="" label="" description="" />
+        <field name="sebelum" type="textarea" cols="30" rows="5"  default="" label="MOD_HIJRI_TEXT_BEFORE_DATE" description="MOD_HIJRI_YOU_CAN_SPECIFY_YOUR_OWN_TEXT_BEFORE_THE_DATE_INCLUDING_HTML_TAG" />
+        <field name="selepas" type="textarea" cols="30" rows="5"  default="" label="MOD_HIJRI_TEXT_AFTER_DATE" description="MOD_HIJRI_YOU_CAN_SPECIFY_YOUR_OWN_TEXT_AFTER_THE_DATE_INCLUDING_HTML_TAG" />
+		</fieldset>
+ 	</fields>
+	</config>
+	<updateservers>
+		<server type="extension" priority="1" name="DPFields Update Site"><![CDATA[https://joomla.digital-peak.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=10&ext=extension.xml]]></server>
+	</updateservers>
+</extension>

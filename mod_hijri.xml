@@ -8,7 +8,7 @@
 	<authorEmail>info@jarabic.com</authorEmail>
 	<authorUrl>https://www.jarabic.com</authorUrl>
 	<version>1.0.1</version>
-	<description><![CDATA[MOD_HIJRI_DES]]></description>
+	<description>MOD_HIJRI_XML_DESCRIPTION</description>
 	<languages>
 		<language tag="en-GB">language/en-GB.mod_hijri.ini</language>
 		<language tag="en-GB">language/en-GB.mod_hijri.sys.ini</language>

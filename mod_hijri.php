@@ -1,13 +1,11 @@
 <?php
 /**
-* Hijri Date for Mambo and Joomla!
+* Hijri Date for Joomla!
 * Author: Ahmad Yussuf - Suryani Masnan, Saqr Quraish Consultant
-* Website: http://sqco.coconia.net
-* Date: 9 Safar 1428 H / 26 Febuary 2007 
-* Version 2.0.0: New: With new formating setting and two more languages: Turkish and Deutsch
-* Version 1.2.1: Display format option
-* Version 1.1.1: Adjustment Hijri Date based on moon-sighting
-* Version 1.0.1: French translation added by Philhadj <http://www.philhadj.com>
+* Module rebuild by Dr. Ashraf Damra - Joomla! in Arabic
+* Website: https://www.jarabic.com
+* @copyright   Copyright (C) 2016 Open Source Matters, Inc. All rights reserved.
+* @license     GNU General Public License version 2 or later
 **/
 /**************************************************************************/
 /* This program is free software. You can redistribute it and/or modify   */

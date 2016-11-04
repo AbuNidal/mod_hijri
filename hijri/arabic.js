@@ -24,7 +24,7 @@ Syawal="شوال";
 Dzulkaedah="ذو القعدة";
 Dzulhijjah="ذو الحجة";
 
-//Bulan Masihi (Name of Months Jan - Dec)
+//  Name of Months Jan - Dec
 Januari="يناير";
 Februari="فبراير";
 Mac="مارس";

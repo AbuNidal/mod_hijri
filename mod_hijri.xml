@@ -7,7 +7,7 @@
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>info@jarabic.com</authorEmail>
 	<authorUrl>https://www.jarabic.com</authorUrl>
-	<version>1.0.1</version>
+	<version>1.0.0</version>
 	<description>MOD_HIJRI_XML_DESCRIPTION</description>
 	<languages>
 		<language tag="en-GB">language/en-GB.mod_hijri.ini</language>

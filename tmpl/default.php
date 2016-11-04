@@ -1,11 +1,10 @@
 <?php
 /**------------------------------------------------------------------------
-# Islamic Prayer module by MH Oudrhiri, joomlar.net
-# ------------------------------------------------------------------------
-# author    M Hicham Oudrhiri http://www.joomlar.net/
-# Copyright @2014 Joomlar.net.  All Rights Reserved.
-# @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
-# Websites: http://www.joomlar.net/
+* Hijri Date for Joomla!
+* Author: Dr. Ashraf Damra - Joomla! in Arabic
+* Website: https://www.jarabic.com
+* @copyright   Copyright (C) 2016 Open Source Matters, Inc. All rights reserved.
+* @license     GNU General Public License version 2 or later
 -------------------------------------------------------------------------*/
 // no direct access
     defined('_JEXEC') or die('Restricted access');
